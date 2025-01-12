@@ -1,0 +1,17 @@
+.highlighted
+{
+color: blue
+}
+
+div>p{
+background-color: yellow;
+}
+
+li:first-of-type{
+color: blueviolet
+}
+ 
+li:last-of-type{
+    color:red;
+    font-style: italic;
+}

@@ -1,0 +1,12 @@
+body{
+    background: #369;
+    color: #eee;
+}
+
+h1,h2,h3,h4{
+    border-bottom-color: rgb(255, 255,255, 0.3);
+}
+
+blockquote{
+    border-left-color: rgb(255, 255, 255, 0.2);
+}

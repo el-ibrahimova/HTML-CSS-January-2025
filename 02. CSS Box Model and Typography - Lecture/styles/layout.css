@@ -1,0 +1,8 @@
+body{
+    padding: 0 42m;
+}
+
+.container{
+    max-width: 66ch;
+    margin: 2em auto;
+}

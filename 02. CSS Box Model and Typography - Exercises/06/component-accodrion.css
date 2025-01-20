@@ -1,0 +1,11 @@
+details{
+    border: 2px solid #eee;
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+summary{
+font-weight: bold;
+}

@@ -26,8 +26,7 @@ body{
 .section{
     border: 2px solid black;
     padding: 2em;
-    margin-bottom: 2em;
-}
+  }
 
 /* .section + .section{
     margin-top: 2em;
@@ -41,4 +40,5 @@ body{
     border: 2px solid blue;
     max-width: 500px;
     padding: 2em;
+    margin: 0 auto;
 }

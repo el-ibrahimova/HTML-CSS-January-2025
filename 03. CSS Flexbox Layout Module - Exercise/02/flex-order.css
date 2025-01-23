@@ -26,6 +26,8 @@ padding: 2em;
     flex-grow: 1;
 }
 
+/* we must set order to all elements in current unit */
+
 .container.sidebar-left .site-content main{
     order: 2;
 }

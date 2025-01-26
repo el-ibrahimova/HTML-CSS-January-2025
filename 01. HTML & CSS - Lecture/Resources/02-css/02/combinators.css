@@ -1,9 +1,19 @@
+.container{
+    border: 1px solid grey;
+    margin: 20px;
+    padding: 20px;
+}
+
 div p {
-    color: blue;
+    color: darkblue;
 }
 
 ul >li {
-    list-style-type: square;
+    list-style-type: circle;
+}
+
+ul{
+    padding-left: 20px;
 }
 
 p + p {
@@ -12,4 +22,8 @@ p + p {
 
 p ~ span {
     font-weight: bold;
+}
+
+span{
+    color:red;
 }

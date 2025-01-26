@@ -1,17 +1,31 @@
-.highlighted
+.text-highlighted
 {
-color: blue
+    color: blue
 }
 
-div>p{
-background-color: yellow;
+div p{
+    background-color: orange;
+}
+
+.box-shadow{    
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);    
 }
 
 li:first-of-type{
-color: blueviolet
+    color: blueviolet
 }
- 
+
 li:last-of-type{
     color:red;
     font-style: italic;
 }
+
+.fancy{
+    color: darkblue;
+}
+
+.fancy-s{
+    color: orange;
+    border-bottom: 1px solid orange;   
+}
+

@@ -1,5 +1,5 @@
 body{
-    background: #eee;
+    background: white;
     padding: 4em;
 }
 
@@ -16,11 +16,13 @@ body{
     width: 4em;
     aspect-ratio: 1/1;
     text-decoration: none;
-    background-color: #fff;
+    background-color: #eee;
     border-radius: 50%;
-    box-shadow: 0 0 1em 0 rgb(0,0,0, 0.2);
-    color: black;
-    font-weight: bold;
+    color: black;  
+}
+
+i{
+    font-size: 1.5em;
 }
 
 .icon:hover{

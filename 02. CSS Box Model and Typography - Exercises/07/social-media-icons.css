@@ -19,6 +19,9 @@ body{
     background-color: #eee;
     border-radius: 50%;
     color: black;  
+    transition: 
+        background-color 0.3s ease-in,
+        color 0.3s, ease-in;
 }
 
 i{
@@ -27,5 +30,5 @@ i{
 
 .icon:hover{
     background: pink;
-    color:#fff;
+    color:purple;
 }

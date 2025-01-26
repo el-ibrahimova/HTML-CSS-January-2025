@@ -1,0 +1,29 @@
+body{
+    background: #eee;
+    padding: 4em;
+}
+
+.icons{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4em;
+    aspect-ratio: 1/1;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 1em 0 rgb(0,0,0, 0.2);
+    color: black;
+    font-weight: bold;
+}
+
+.icon:hover{
+    background: pink;
+    color:#fff;
+}

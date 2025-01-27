@@ -24,7 +24,7 @@ margin-bottom: 2em;
 @media (hover: none) {
     body::before {
         display: block;
-        content: 'This device doesn't support hover';
+        content: 'This device doesnt support hover';
     }
 }
 

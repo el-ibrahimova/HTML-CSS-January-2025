@@ -5,7 +5,7 @@
 }
 
 body{
-padding: 4em;
+    padding: 4em;
 }
 
 h1{
@@ -20,29 +20,25 @@ ul li{
     display: block;
 }
 
-details{
-
-}
-
 details summary{
-list-style-type: none;
-display: flex;
-align-items: center;
-gap: 0.5em;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
 }
 
 details summary::before{
-content: '+';
-width: 1.6em;
-font-size: 12px;
-line-height: 1.4;
-aspect-ratio: 1/1;
-border-radius: 50%;
-background: #999;
-color: white;
-display: flex;
-align-items: center;
-justify-content: center;
+    content: '+';
+    width: 1.6em;
+    font-size: 12px;
+    line-height: 1.4;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #999;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 details[open] > summary::before{
@@ -68,18 +64,19 @@ ul li::before{
     width: 1em;
     height: 1em;
     position: relative;
-    left: -2px;
+    left: -1.5px;
     top:-0.4em;
+    margin-right: -2px;
     z-index: 1;
 }
 
 ul li:last-child::after{
     display: block;
     content: '';
-width: 2px;
-background: white;
-position: absolute;
-left: -2px;
-height: 100%;
-bottom: 0;
+    width: 2px;
+    background: white;
+    position: absolute;
+    left: -2px;
+    height: 100%;
+    bottom: 0;
 }

@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px/1.5 Verdana, sans-serif;
+}
+
+body{
+    min-height: 100dvh;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard{
+    background: #DDD ;
+    border: 2px solid #CCC;
+    border-radius: 0.9em;
+    box-shadow: 0 0.3em 0 0 #bbb;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.keyboard .row{
+    display: flex;
+  gap: 1em;
+}
+
+.keyboard .key{
+    padding: 1em 1.4em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    box-shadow: 0 0.2em 0 0 #bbb;
+    background: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.keyboard .key.special{
+    background: #eee;
+}
+
+.keyboard .key.grow{
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.keyboard .key:active{
+    top:2px;
+    box-shadow: 0 0.5em 0 0 #bbb;
+}
+
+.keyboard .key.enter{
+    border-bottom-right-radius: 0;
+}
+
+.keyboard .key.enter::after{
+content: '';
+display: block;
+width: 6.8em;
+height: 4.2em;
+position:absolute;
+right: -1px;
+top: 100%;
+border: 1px solid #ccc;
+border-top: 0;
+border-radius: 0.3em;
+box-shadow: inherit;
+background: #eee;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+}

@@ -6,7 +6,7 @@ h1, h2, p {
 }
 
 body{
-       margin: 1em;
+    margin: 1em;
 }
 
 header, section, footer{
@@ -16,7 +16,7 @@ header, section, footer{
 }
 
 section, footer{
-        padding: 1em;
+    padding: 1em;
 }
 
 

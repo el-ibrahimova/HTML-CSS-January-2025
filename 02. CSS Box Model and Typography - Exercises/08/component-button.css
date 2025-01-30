@@ -1,0 +1,84 @@
+/* reset css */
+
+*{
+    padding: 0;
+    margin: 0;
+    
+    font: 14px/1.5 Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+html{
+    font: 12px/1.5 Serif, sans-serif;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+/* end of reset css */
+
+body{
+    margin: 2em 1em;
+}
+
+p{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+div.buttons button{
+    border: 0.5px solid gray;
+    border-radius: 0.3em;    
+    display: inline-block;   
+    font-size:1em;
+    text-decoration: none;
+    padding: 1em 0.7em;
+    margin: 0.3em;  
+    margin-bottom: 2em;
+    text-align: center;
+    width: 8em;  
+}
+
+
+
+div.button-container a{
+    border: 0.5px solid gray;
+    border-radius: 0.3em;    
+    display: inline-block;   
+    font-size:1em;
+    text-decoration: none;
+    padding: 1em 0.7em;
+    margin: 0.3em;  
+    margin-bottom: 2em;
+    text-align: center;
+    width: 8em;  
+}
+
+.grey{
+    background: gray;
+}
+
+.orange{
+    background: orange;
+}
+
+.light-grey{
+    background: lightgreen;
+}
+
+.white{
+    background: white;
+}
+
+.dark-grey{
+    background: darkgray;
+    content: '';
+}
+
+.dark-grey::after{  
+    content: 'Edit';
+}

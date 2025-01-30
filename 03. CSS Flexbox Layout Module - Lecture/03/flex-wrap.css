@@ -1,0 +1,24 @@
+[class^="flex-wrap"]{
+    display: flex;
+    border: 2px solid blue;
+    width: 300px;
+    padding: 1em;
+}
+
+.flex-wrap-nowrap{
+    flex-wrap: nowrap;    
+}
+
+.flex-wrap-wrap{
+    flex-wrap: wrap;   
+}
+
+.flex-wrap-wrap-reverse{
+    flex-wrap: wrap-reverse;    
+}
+
+.flex-item{
+    border: 1px solid black;
+    padding: 1em;
+    background: lightgoldenrodyellow;           
+}

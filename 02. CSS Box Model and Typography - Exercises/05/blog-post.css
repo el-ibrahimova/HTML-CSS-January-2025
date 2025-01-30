@@ -1,0 +1,50 @@
+/* reset css */
+
+*{
+    padding: 0;
+    margin: 0;
+    
+    font: 14px/1.5 Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+/* end of reset css */
+
+.container{
+    border: 2px solid lightblue;
+    margin: 3em auto;
+    padding: 2em;
+    max-width: 900px;
+}
+
+.container > header h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.container p {
+    margin-bottom: 1em;
+}
+
+.container div.level1{
+       font-size: 1.3em;
+       padding: 1em 0;
+}
+
+.container h3 {
+    padding: 1em 0 0.5em 0;
+    font-size: 1.5em;
+}
+
+footer *{
+    font-style: italic;
+}

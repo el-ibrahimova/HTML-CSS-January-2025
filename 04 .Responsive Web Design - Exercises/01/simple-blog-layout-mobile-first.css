@@ -1,0 +1,42 @@
+.site{
+    background:white;
+    box-shadow: 0 0 1em 0 rgb(0,0,0, 0.1);
+    border-radius: 0.3em;
+    padding: 2em;
+    max-width: 60em;
+    /* 6em * 16px = 960px  */
+    margin: 0 auto;    
+}
+
+.site-header,
+.content-main,
+.content-aside,
+.site-footer{
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    padding: 1.5em 2em;
+}
+
+.content-main,
+.content-aside{
+    margin: 1em 0;
+}
+
+
+
+@media (min-width: 800px) {
+    .site-content{
+        display: flex;
+        gap: 1em;
+    }
+
+    .content-main{
+        flex-basis: 200px;
+        flex-grow: 1;
+    }
+
+    .content-aside{
+        flex-basis: 200px;
+        /* by default flex-grow =0 */
+    }   
+}

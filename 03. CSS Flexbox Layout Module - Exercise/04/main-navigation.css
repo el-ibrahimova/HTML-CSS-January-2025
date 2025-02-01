@@ -1,0 +1,63 @@
+nav{
+    border: 0.7px solid darkgray;
+    background: rgb(227, 215, 215);
+    box-shadow: 1em 1em 1em 1em rgba(232, 236, 209, 0.6);
+    padding: 1em;
+    border-radius: 0.5em;
+ }
+
+nav ul{
+    display: flex;    
+    gap: 1em;   
+    padding: 0;     
+}
+
+nav ul li,
+nav ul li a {
+    display: block;    
+}
+
+nav ul li{
+    position: relative;
+}
+
+
+nav ul li:hover >ul{
+   min-width: 20ch;
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   gap:0.3em;
+   top: 100%;
+   left: 0;
+   background-color: #eadddd;
+   border-radius: 0.3em;
+   box-shadow: 0 0 1em 0 rgb(0,0,0,0.1);
+   padding: 0;
+   }
+
+nav ul li a{
+    padding: 0.7em 1.5em;
+    border-radius: 0.3em;
+    background: white;
+    color: orange;
+    text-decoration: none;
+}
+
+nav ul li:hover>a,
+nav ul li a:hover{
+background: rgb(236, 174, 40);
+color: #000;
+}
+
+nav ul ul{
+    display: none;
+}
+
+nav ul ul li:hover >ul{
+    padding: 1em ;
+    left: 100%;
+    right: initial;
+    top: 1.5em;
+ 
+}

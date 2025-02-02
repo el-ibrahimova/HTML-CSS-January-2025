@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+html{
+    font-family: Lato, sans-serif;
+}
+
+.fancy-numbered-list{
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    counter-reset: fancy-list 0;
+}
+
+.fancy-numbered-list li{
+    flex: 1 1 300px;
+    display: block;
+    background: #fff;
+    box-shadow: -0.2em 0.2em 0.2em 0 rgb (0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    padding: 1em 1.5em;
+    position: relative;
+    counter-increment: fancy-list 1;
+}
+
+.fancy-numbered-list li span{
+    display: block;
+}
+
+.fancy-numbered-list li .title{
+    font-weight: bold;   
+}
+
+.fancy-numbered-list li::after{
+    display: inline-block;
+    padding: 0.4em 1.2em;
+    content:counter(fancy-list, decimal);
+    background: orange;
+    color: white;
+    box-shadow: -0.2em 0.2em 0.2em 0 rgb (0, 0, 0, 0.1);
+    border-top-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

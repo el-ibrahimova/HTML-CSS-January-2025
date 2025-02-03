@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <link rel="stylesheet" href="form-elements.css">
+</head>
+<body>
+    <h1>Form Elements</h1>
+    
+    <form action="https://www.google.com/search" method="get">
+        
+        <input type="text" name="q">
+        <button>Search</button>
+        
+    </form>
+    
+    <form action="#" method="post">
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="David Core">
+        </p>
+        
+        <p>
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password">
+        </p>
+        
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        
+        <button>Log in</button>
+        
+        
+        <p>
+            <fieldset>
+                <legend>Happy or Sad?</legend>
+                
+                <input type="radio" name="happy-or-sad" id ="radio-happy">
+                <label for="radio-happy">Happy</label>     
+                
+                <input type="radio" name="happy-or-sad" id ="radio-neutral">
+                <label for="radio-neutral">Neutral</label>  
+                
+                <input type="radio" name="happy-or-sad" id ="radio-sad">
+                <label for="radio-sad">Sad</label>  
+            </fieldset>
+        </p>
+        
+        <p>
+            <fieldset>
+                <legend>Happy or Sad?</legend>
+                
+                <input type="checkbox" name="happy" id ="checkbox-happy">
+                <label for="checkbox-happy">Happy</label>     
+                
+                <input type="checkbox" name="happy" id ="checkbox-neutral">
+                <label for="checkbox-neutral">Neutral</label>  
+                
+                <input type="checkbox" name="happy" id ="checkbox-sad">
+                <label for="checkbox-sad">Sad</label>  
+            </fieldset>
+        </p>
+        
+        <p>
+            <label for="color">Favorite Color</label>
+            <input type="color" name="color" id="color">
+        </p>
+        
+        <p>
+            <label for="file">File</label>
+            <input type="file" name="file" id="file" required>
+        </p>
+        
+        
+        <p>
+            <label for="number">Number</label>
+            <input type="number" name="number" id="number" required>
+        </p>
+        
+        <p>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="bulgaria">Bulgaria</option>   
+                <option value="uk">United Kingdom</option>  
+                <option value="greece">Greece</option>   
+            </select>
+        </p>
+        
+        <p>
+            <label for="message">Message</label>
+            <textarea name ="message" id="message"></textarea>
+        </p>
+        
+        
+        <fieldset>
+            <legend>Audio settings:</legend>
+            <p>           
+                <input type="range" name="volume" id="volume" min="0" max="11">
+                <label for="volume">Volume</label>
+                     
+                <input type="range" name="cowbell" id="cowbell" min="0" max="11">
+                <label for="cowbell">Cowbell</label>
+            </p>
+        </fieldset>
+        
+    </form>
+    
+</body>
+</html>

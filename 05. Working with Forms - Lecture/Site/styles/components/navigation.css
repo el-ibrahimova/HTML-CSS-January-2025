@@ -1,0 +1,37 @@
+/* General styling for all elements inside nav */
+.site-header nav{
+    
+}
+
+.site-header nav ul{
+    
+}
+
+.site-header nav li {
+    /* Премахва точките от елементите на Ul */   
+    display: block;
+}
+
+.site-header nav a{
+    display: block;
+    padding: 0.6em 1.5em;
+    background: #eee;
+    border-radius: 0.3em;
+    text-decoration: none;
+    color: #369;
+
+}
+
+
+/* Specific styling for first level */
+
+.site-header nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.site-header nav > ul >li {
+flex-grow: 1;
+flex-basis: 15ch;
+}

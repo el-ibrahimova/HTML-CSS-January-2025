@@ -1,5 +1,5 @@
-.body{
-    background: white;
+body{
+    background: #eee;
 }
 
 
@@ -7,5 +7,36 @@
     max-width: 900px;
     margin: 0 auto;
 
-    background: lightgray;
+    padding: 2em;
+    background: #fff;
+    box-shadow: 0 0 1em 0 rgb(0,0,0, 0.1);
+    border-radius: 0.2em;
+}
+
+@media(width > 960px){
+    .site{
+       /* margin само отгоре и отдолу = block */
+        margin-block: 2em;  
+    }
+}
+
+.site-header{
+    padding-bottom: 2em;
+
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.site-header .site-title{
+    font-size: 1.4em;
+}
+
+.site-header .site-title a{
+color: #369;
+text-decoration: none;
+}
+
+.site-footer{
+    padding-top: 2em;
 }

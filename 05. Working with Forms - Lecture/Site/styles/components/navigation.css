@@ -48,30 +48,29 @@ label[for="main-nav-toggle"]{
     label[for="main-nav-toggle"] .close{
         display: none;
     } 
-
+    
     .site-header nav{
         display: none;
         flex-basis: 100%;
     }
-
+    
     .site-header nav li{
         flex-basis: 100%;
     }
-
-
+    
     #main-nav-toggle:checked ~ .site .site-header label[for="main-nav-toggle"] .open{
         display: none;
     }
-
+    
     #main-nav-toggle:checked ~ .site .site-header label[for="main-nav-toggle"] .close{
         display: block;
     }
-
+    
     #main-nav-toggle:checked ~ .site .site-header nav {
-              display: block;
+        display: block;
     }
-
-   }
+    
+}
 
 @media(hover: hover){
     .site-header nav {

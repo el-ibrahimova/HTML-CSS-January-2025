@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
-
+    
     <input type="checkbox" name="main-nav-toggle" id="main-nav-toggle">
-
+    
     <div class="site">
         
         <header class="site-header">
@@ -17,18 +17,18 @@
                 <a href="index.html">Site Title</a>
             </h1>
             
-<label for="main-nav-toggle">
-    <span class="open">Open</span>
-    <span class="close">Close</span>
-</label>
-
+            <label for="main-nav-toggle">
+                <span class="open">Open</span>
+                <span class="close">Close</span>
+            </label>
+            
             <nav>
                 <ul>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contacts.html">Contacts</a></li>
-                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="login.html">Log in</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,14 +37,30 @@
             
             <article class="page">
                 <header class="page-header">
-                    <h2>Homepage</h2>                    
+                    <h2>Log in</h2>                    
                 </header>
                 
                 <section class="page-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab labore ipsa eos aspernatur illum nulla doloribus nesciunt non magnam provident, autem sequi, culpa consequatur fugit dolores esse. Voluptas, doloremque quaerat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab labore ipsa eos aspernatur illum nulla doloribus nesciunt non magnam provident, autem sequi, culpa consequatur fugit dolores esse. Voluptas, doloremque quaerat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab labore ipsa eos aspernatur illum nulla doloribus nesciunt non magnam provident, autem sequi, culpa consequatur fugit dolores esse. Voluptas, doloremque quaerat.</p>
-                    
+                    <form action="#" method="get">
+                        
+                        <fieldset>
+                            <legend>Log in</legend>
+                            
+                            <p class="field">
+                                <label for="username">Username</label>
+                                <input type="text" name="username" id="username">
+                                
+                            </p>
+                            
+                            <p class="field">
+                                <label for="password">Password</label>
+                                <input type="text" name="password" id="password">
+                                
+                            </p>
+
+                            <button>Log in</button>
+                        </fieldset>
+                    </form>
                 </section>
             </article>
             

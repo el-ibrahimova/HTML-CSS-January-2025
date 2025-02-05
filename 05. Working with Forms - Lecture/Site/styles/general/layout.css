@@ -20,22 +20,7 @@ body{
     }
 }
 
-.site-header{
-    padding-bottom: 2em;
 
-    display: flex;
-    align-items: center;
-    gap: 2em;
-}
-
-.site-header .site-title{
-    font-size: 1.4em;
-}
-
-.site-header .site-title a{
-color: #369;
-text-decoration: none;
-}
 
 .site-footer{
     padding-top: 2em;

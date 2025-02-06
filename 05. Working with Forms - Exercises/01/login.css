@@ -1,0 +1,48 @@
+h2 {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+    
+    /* по този начин получавме чертичката под Login, която не е разпъната до края
+    а е дълга колкото текста над нея */
+    display: inline-block;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    display: block;
+    width: 100%;
+    padding: 0.8em 1.2em;
+    border: 2px solid #ccc;
+    border-radius: 0.2em;
+}
+
+button{
+    display: block;
+    width: 100%;
+    border: none;
+    background: orange;
+    color: #fff;
+    border-radius: 0.2em;
+    font-weight: bold;
+    padding: 0.8em 1em;
+}
+
+.field{
+    padding-bottom: 1.5em;
+}
+
+.container{
+    /* По този начин - 100vw, е responsive. 
+    ако зададем em или px при събиране ще получим скролер */
+    width: 100vw;
+    max-width: 25em;
+}

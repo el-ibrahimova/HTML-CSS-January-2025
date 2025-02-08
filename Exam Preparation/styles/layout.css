@@ -1,0 +1,149 @@
+.section {
+    /* calc((100%-60em)/2) - за да бъде responsive - текста в средата, но фона до края на бодито */
+    
+    /* 2em max(2em, calc((100%-60em)/2)) - избира се една от двете стойности
+    - ако размера падне под 2em падинга остава  calc((100%-60em)/2)    */
+    
+    padding: 2em max(2em, calc((100% - 60rem) / 2));
+}
+
+.section p:last-child{
+    padding: 0;
+}
+
+.section.site-header{
+    background: pink;
+    padding-bottom: 0;
+}
+
+.section.site-header .aside a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.section.site-header .aside .links,
+.section.site-header .aside .socials{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.section.site-header .aside .links{
+    padding-bottom: 1em;
+}
+
+.section.site-header .aside .links li,
+.section.site-header .aside .socials li{
+    /* Премахваме точките идващи с li */
+    display: block;
+}
+
+.section.site-header .aside .socials li .title{
+    display: none;
+}
+
+
+.section.site-header .main{
+    background: #fff;
+    border-radius: 5em;
+    padding: 0.5em 3em;
+
+    /* правим позицията relative, 
+    за да можем спрямо нея да наместим името на сайта в навигацията */
+    position: relative;
+
+    /* преместваме навигацията по средата на header и banner */
+    position: relative;
+    bottom: -2em;
+}
+
+
+.section.site-header .main .site-title{   
+    display: block;
+    font-weight: bold;
+    font-size: 2.5em;
+
+    /* с тази позиция absolute задаваме координати и наместваме 
+    спрямо .section.site-header .main */
+    /* по този начин неговия горен ляв ъгъл е центриран, 
+    но трябва да го центрираме по центъра на елемента */
+    position: absolute;
+    top: 50%;
+    left:50%;
+
+    /* наместваме го по неговия център по този начин - iCream */
+    translate: -50% -50%;
+}
+
+.section.site-header .main .site-title a{
+    color:pink;
+}
+
+.section.site-header .main .site-title a span{
+    color:aqua;
+}
+
+
+.section.site-header .main a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.section.site-header nav ul{
+    display: flex;   
+    gap: 1em;
+    padding-bottom: 0;
+}
+
+.section.site-header nav li{
+    display: block;   
+}
+
+
+/* правим празно място в средата за името на сайта
+-разпределеям елементите в ляво и дясно */
+.section.site-header nav li:nth-child(3)
+{
+    margin-right: auto;
+}
+
+.section.site-header nav li a{
+ padding: 1em 1.5em; 
+}
+
+
+/* ---------------------------------------------------------------- */
+
+
+.section.banner{
+    background: #666;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+
+    /* padding-block: padding само на top и bottom */
+    padding-block: 20vh;
+
+  background-image: url('../iCream/images/carousel-1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.section.banner h2{
+
+}
+
+.section.banner p{
+    padding: 0 4em;
+    
+}
+
+.section.featured-product{
+    background: lightblue;
+}
+
+.section.site-footer{
+    background: #eee;
+}

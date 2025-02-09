@@ -1,10 +1,41 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* typography */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&amp;display=swap ');
+
+html{
+    font: 16px/1.5 "PT Sans", sans-serif;
+}
+
+body, input, textarea, table{
+    font:inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+h1 { font-size:2.8em; }
+h2 { font-size:2.2em; }
+h3 { font-size:1.8em; }
+h4 { font-size:1.4em; }
+h5 { font-size:1.2em; }
+h6 { font-size:1.0em; }
+
+
+/* ---------------------------------------------------------- */
+
 img {
     display: block;
     width: 100%;
-    height: auto;
+    height: auto;   
 }
-
-/* components */
 
 .main-nav ul{
     display: flex;
@@ -19,6 +50,8 @@ img {
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
+    font-weight: bold;
+    color: #000;
 }
 
 .flex-columns {
@@ -26,23 +59,30 @@ img {
     justify-content: center; 
 }
 
-.flex-columns.c2{
-    flex: 0 0 40%;
+.flex-columns.c2 > *{
+    flex: 1 1 45%;
 }
 
-.flex-columns.c3{
+.flex-columns.c3 > *{
     flex: 0 0 30%;
 }
 
 /* Sections */
+
+body{
+    background-image: url('images/background.jpg');
+    background-position: center -19em;
+    background-repeat: no-repeat;
+    background-size: 1920px auto;
+}
 
 .section .wrapper{
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.section .wrapper.wide{
-    max-width: 1800px;
+.section .wrapper.narrow{
+    max-width: 1000px;
 }
 
 .section-banner,
@@ -51,24 +91,160 @@ img {
     text-align: center;
 }
 
-.section-catalog header h3{
-    font-size: 1.2em;
-}
+.site-header .site-title a{
+    display: block;
+    background: url('images/logo.png'); 
+    width: 4em;
+    height: 4em;
+    background-size: contain;
 
-.section-catalog .wrapper{
-    padding: 1em 0 2em 0;
+    /* Премахваме текста */
+    text-indent: -100vw;
+    overflow: hidden;
 }
 
 .site-header .wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2em;
+}
+
+.section-banner .wrapper{
+    padding: 6em 0 4em 0;;
+}
+
+.section-banner .wrapper h2{
+    padding-bottom: 1rem;
+}
+
+.section-banner .wrapper p{
+    padding-bottom: 0;
+}
+
+.section-banner .wrapper .button{
+    display: inline-block;
+    background: #fff;
+    border-radius: 0.3em;
+    color: #666;
+    margin-top: 2em;
+    padding: 0.5em 1em;
 }
 
 .section-catalog{
     background: #60ACC1;
 }
 
+.section-catalog header{
+    padding-bottom: 1.5em;
+}
+
+.section-catalog header h3{
+    font-size: 1.2em;
+}
+
+.section-catalog .flex-columns.c2{
+    gap: 11em;
+}
+
+.section-catalog .flex-columns.c2 article{
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 1em 0 rgb(0,0,0, 0.4);
+}
+
+/* Правим половината съдържание за снимката, другата половина за текста */
+.section-catalog .flex-columns.c2 article > * {
+    flex:  0 0 50%;
+}
+
+.section-catalog .flex-columns.c2 article h4{
+    font-size: 1em;
+    text-align: center;
+}
+
+.section-catalog .flex-columns.c2 article section{
+    background: white;
+    padding: 3em 2em;
+}
+
+.section-catalog .flex-columns.c2 article section h4{
+    padding-bottom: 1em;
+}
+
+.section-catalog .flex-columns.c2 article .media {
+    overflow: hidden;
+
+    /* снимката е зависима от графата с текста */
+    position: relative;
+}
+
+.section-catalog .flex-columns.c2 article .media img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+}
+
+.section-catalog .flex-columns.c3{
+    gap: 3em;
+}
+
+.section-catalog .flex-columns.c3 img{
+    box-shadow: 0 0 1em 0 rgb(0,0,0, 0.4);
+}
+
+.section-catalog .wrapper{
+    padding: 1em 0 2em 0;
+}
+
+.section-furniture{
+    background: white;
+}
+
+.section-furniture .wrapper{
+    padding: 3em 0;
+}
+
+.section-furniture .flex-columns.c3 {
+    gap: 2em;
+}
+
+.section-furniture .flex-columns.c3 img {
+    height: 5em;
+    width: 5em;
+    margin: 0 auto;
+}
+
+.section-furniture .flex-columns.c3 > * {
+    text-align: center;
+    flex: 1 1 30%;
+}
+
+.section-furniture .flex-columns.c3 h4{
+    font-size: 1.2em;
+}
+
+.section-about .wrapper {
+    padding: 2em;
+    opacity: 0.6;
+}
+
+.section-about .wrapper header {
+    padding-bottom: 2em;
+}
+
+.section-about .wrapper header h3{
+    font-size: 2em;
+}
+
+.section-about .wrapper header p {
+    font-style: italic;
+}
+
+.section-about .wrapper p {
+    max-width: 100ch;
+    margin: 0 auto;
+}
 
 .site-footer{
     background: #2D333C;

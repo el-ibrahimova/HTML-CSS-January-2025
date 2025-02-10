@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+html{
+    font: 20px/1.5 "PT Sans", sans-serif;
+}
+
+body, input, textarea, table{
+    font:inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "PT Serif";
+}
+
+h1 { font-size:2.8em; }
+h2 { font-size:2.2em; }
+h3 { font-size:1.8em; }
+h4 { font-size:1.4em; }
+h5 { font-size:1.2em; }
+h6 { font-size:1.0em; }
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;   
+}
+
+/* ------------------------------------------------------- */
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.site-section.banner{
+    background:#00052F;
+}
+
+.site-section.banner .container{
+    border: 2px solod black;
+    color: #fff;
+}
+
+.site-section.banner h2{
+    font-size: 3.4em;
+    font-weight: normal;
+    line-height: 1.26;
+    margin-bottom: 1rem;
+}
+
+.site-section.banner p{
+    max-width: 790px;
+    font-size: 1.2em;
+}
+
+.site-section{
+    padding: 2em;
+}
+
+.site-header{
+    display: flex;
+
+    /* nav и div class = site title отиват в двата края на контейнера */
+    justify-content: space-between;
+}
+
+.site-header nav ul{
+    display: flex;
+}
+
+.site-title{
+    width:130px;
+    height: 110px;
+    overflow: hidden;
+    text-indent: -200vw;
+    background-image: url('images/logo.webp');
+}
+

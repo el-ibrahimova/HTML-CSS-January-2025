@@ -42,13 +42,18 @@ img {
 
 /* ------------------------------------------------------- */
 
+body{
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    
+    /* винаги ще разпъва изображението */
+    background-size: 100%;
+    background-position: top  center;
+}
+
 .container{
     max-width: 1100px;
     margin: 0 auto;
-}
-
-.site-section.banner{
-    background:#00052F;
 }
 
 .site-section.banner .container{
@@ -68,13 +73,17 @@ img {
     font-size: 1.2em;
 }
 
+.site-section.banner{
+    padding-bottom: 12em;
+}
+
 .site-section{
     padding: 2em;
 }
 
 .site-header{
     display: flex;
-
+    
     /* nav и div class = site title отиват в двата края на контейнера */
     justify-content: space-between;
 }
@@ -83,11 +92,47 @@ img {
     display: flex;
 }
 
+.site-header nav a{
+    color: white;
+    padding: 0 0.5em;
+}
+
 .site-title{
     width:130px;
     height: 110px;
     overflow: hidden;
     text-indent: -200vw;
     background-image: url('images/logo.webp');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.site-section.columns {
+    border-bottom: 2px solid #ccc;
+    background: white;
+}
+
+.site-section.sponsors,
+.site-section.partners{
+    background: white;
+    text-align: center;
+}
+
+.site-footer{
+    background:#171720;
+    color: white;
+}
+
+.site-footer:last-child {
+    border-top: 1px solid rgb(255, 255, 255, 0.3);
+    padding-top: 1em;
+    
+}
+
+.column-container{
+    display: flex;
+    gap: 2em;
+}
+
 

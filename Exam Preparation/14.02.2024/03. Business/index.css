@@ -108,15 +108,81 @@ body{
     background-repeat: no-repeat;
 }
 
+.column h2{
+    font-size: 2.5em;
+    padding: 1.3em 0 0.3em 0;
+    font-weight: 500;
+}
+
+.column p{
+    font-size: 0.75em;
+    line-height: 1.8;
+    padding-bottom: 2em;
+}
+
+.column .button{
+    border: 1px solid #B0825C;
+    padding: 0.5em 1em;
+    color: #B7865C;
+    border-radius: 0.1em;    
+}
+
+
 .site-section.columns {
     border-bottom: 2px solid #ccc;
     background: white;
+    padding-bottom: 5em;
 }
 
 .site-section.sponsors,
 .site-section.partners{
     background: white;
     text-align: center;
+    
+}
+
+.sponsors{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.sponsors li{
+    display: block;
+    width: 7em;
+    aspect-ratio: 1/1;
+    background: #eee;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.sponsors h2{
+    color: #B0835E;
+    font-family: "PT Sans";
+    font-weight: 500;
+}
+
+.partners{
+    padding: 0 0 3em 0;
+}
+
+.partners h2{
+    color: #B0825C;
+    font-weight: 500;
+}
+
+.site-section.sponsors p,
+.site-section.partners p {
+    font-family: "PT Sans";
+    font-size: 0.8em;
+    opacity: 70%;
+}
+
+.sponsors li a img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .site-footer{
@@ -124,10 +190,14 @@ body{
     color: white;
 }
 
-.site-footer:last-child {
-    border-top: 1px solid rgb(255, 255, 255, 0.3);
-    padding-top: 1em;
-    
+.site-footer:last-child{
+    border-top: 2px solid rgb(255, 255, 255, 0.3);
+}
+
+.site-footer p{
+    font-size: 0.6em; 
+    opacity: 70%;
+    padding: 1em;
 }
 
 .column-container{
@@ -135,4 +205,14 @@ body{
     gap: 2em;
 }
 
+.site-footer .column ul li{
+    text-transform: uppercase;
+    font-size: 0.6em;
+    line-height: 3;
+    opacity: 70%;
+}
 
+.site-footer .column h4{
+    font-size: 1em;
+    padding-bottom: 1em;
+  }

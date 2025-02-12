@@ -96,16 +96,23 @@ button {
 }
 
 .socials li{
-    display: block;
-    border: 1px solid #ccc;
+   /* за да бъдат квадратчетата еднакви */
+    display: flex;
+    flex: 0 0 5em;
+    aspect-ratio: 3/2;
     
-    /* за да са центрирани */
+    border: 1px solid #ccc;    
     line-height: 1;
     border-radius: 0.1em;
 }
 
 .socials li a {
-    display: block;
-    padding: 0.5em 1em;
+    text-decoration: none;
     font-size: 1.4em;
+    
+    /* тези свойства са за да бъдат центрирани иконите */
+    display: flex;
+    flex: 1 1 auto;    
+    align-items: center;
+    justify-content: center;
 }

@@ -1,0 +1,8 @@
+body{
+    background: #C1BBBB;
+}
+
+.section .inner{
+    max-width: 1300px;
+    margin: 0 auto;
+}

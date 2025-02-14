@@ -4,22 +4,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>NewsLetter</title>
+	<link rel="stylesheet" href="./reset.css">
+	<link rel="stylesheet" href="./typography.css">
+	<link rel="stylesheet" href="./layout.css">
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 	
 	<header class="section site-header">
 		<div class="inner">
-			<div class="site-title">
-				NewsLetter 
-			</div>
-			<div class="site-description">
-				by SoftUni
+			<div class="site-branding">
+				<div class="site-title">
+					NewsLetter 
+				</div>
+				<div class="site-desc">
+					by SoftUni
+				</div>
 			</div>
 			
 			<nav>
 				<ul>
-					<li><a href="#">Welcome</a></li>
+					<li class="active"><a href="#" >Welcome</a></li>
 					<li><a href="#">News</a></li>
 					<li><a href="#">About Us</a></li>
 					<li><a href="#">Contacts</a></li>
@@ -37,8 +42,14 @@
 			</div>
 			
 			<div class="buttons">
-				<a href="#" class="button primary">Ok let's go</a>
-				<a href="#" class="button secondary">More info</a>
+				<a href="#" class="button primary">
+					<span>Ok let's go </span>
+					<i class="fa-solid fa-circle-arrow-right"></i>
+				</a>
+				<a href="#" class="button secondary">
+					<span>More info</span>
+					<i class="fa-solid fa-circle-question"></i>
+				</a>
 			</div>
 		</div>
 		
@@ -73,7 +84,7 @@
 				</section>
 			</article>
 			
-			<article clas="card">
+			<article class="card">
 				<img src="images/html-css.jpg">
 				
 				
@@ -93,7 +104,7 @@
 		<div class="inner">
 			<div class="aside">
 				<h4>Interesting stuff</h4>
-
+				
 				<ul>
 					<li><img src="images/pic04.jpg"></li>
 					<li><img src="images/pic05.jpg"></li>
@@ -111,7 +122,6 @@
 			</div>
 		</div>
 	</section>
-	
 	
 	<footer class="section site-footer">
 		<div class="inner">
@@ -148,7 +158,7 @@
 				
 				<div class="column">
 					<h6>Contact Us</h6>
-
+					
 					<ul class="socials">
 						<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
 						<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -156,7 +166,7 @@
 						<li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
 						<li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
 					</ul>
-
+					
 					<p>Fictional Address</p>
 					<p>City, Postcode</p>
 					<p>(359) 000 00 00 00</p>

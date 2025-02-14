@@ -7,7 +7,7 @@
 }
 
 html{
-    font: 12px/1.5 'Gochi Hand', sans-serif;
+    font: 14px/1.5 'Gochi Hand', sans-serif;
 }
 
 img{
@@ -18,7 +18,7 @@ img{
 
 body{
     background: #E0E0E0;
-    padding: 3em;
+    padding: 2em;
 }
 
 .container{
@@ -37,30 +37,49 @@ body{
 }
 
 .picture{
-    padding: 2em;
-}
-
-.picture img {
-    border-top-left-radius: 1.5em;
-    border-top-right-radius: 1.5em;
+    padding: 2em;    
     position: relative;
 }
 
-.picture .content{
-    position:fixed;
-    top: 38em;
-    left: 14.4em;
+.picture img { 
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+    
+}
+
+.picture .content{    
+    padding: 0.5em;
+    position: absolute;
     background: #F4F4F4;
     border-radius: 1.5em;
-    width: 890px;
+    text-align: center;
+    top:26.5rem;
+    margin: 2em;
+    left: 2rem;
+    right: 2rem;
 }
 
 .content h2{
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
 }
 
 .content p{
     text-align: center;
     padding: 0 1em 1em;
 }
+
+.receiver{
+    padding: 2em;
+}
+
+.receiver h2{
+    padding-bottom: 0.5em;
+}
+
+.receiver p{
+    padding-top: 0.5em;
+}
+
+
+
